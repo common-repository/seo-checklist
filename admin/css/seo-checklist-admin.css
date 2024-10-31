@@ -1,0 +1,237 @@
+.seo-checklist {
+    background: #fff;
+    padding: 100px 40px;
+    margin: 30px 20px 0 0;
+}
+
+.seo-checklist-title {
+    text-align: center;
+}
+
+.seo-checklist-title h1 {
+    color: #5ea7b2;
+    font-size: 3em;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+}
+
+.seo-checklist-title h3 {
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.seo-checklist-button {
+    background: #45a9b6 !important;
+    color: #ffffff !important;
+    border-color: #45a9b6 !important;
+    -webkit-box-shadow: 0 1px 0 #407b43 !important;
+    padding: 10px 50px !important;
+    height: initial !important;
+    border-radius: 0!important;
+    display: block!important;
+    margin: 0 auto!important;
+}
+
+.seo-checklist-button-primary:hover,
+.seo-checklist-button-primary:focus {
+    background: #337e88!important;
+    border-color: #337e88!important;
+}
+
+.seo-checklist-loading {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 8px;
+    border-radius: 50px;
+    background: #ddd;
+    margin: 30px 0;
+}
+
+.seo-checklist-loading-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 8px;
+    background: #5ea7b2;
+    transition: width ease 5s;
+}
+
+.seo-checklist-panel {
+    display: none;
+    margin-top: 30px;
+}
+
+.seo-checklist-count-container {
+    text-align: center;
+    margin: 30px 0 0;
+    display: flex;
+}
+
+.seo-checklist-count {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    width: 25%;
+    color: #333;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+.seo-checklist-count:first-child {
+    border-left: 1px solid #ccc;
+}
+
+.active.seo-checklist-count {
+    background: #fff;
+    border-bottom: none;
+    border-top: none;
+}
+
+.seo-checklist-count:after {
+    content: '';
+    display: none;
+    position: absolute;
+    width: calc(100% + 2px);
+    height: 10px;
+    background: #222;
+    left: -1px;
+    top: -9px;
+}
+
+.seo-checklist-count .number {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.active.seo-checklist-count--passed:after{
+    background: #47b749;
+    display: block;
+}
+
+.active.seo-checklist-count--failed:after{
+    background: #d40000;
+    display: block;
+}
+
+.active.seo-checklist-count--warning:after{
+    background: #ffa107;
+    display: block;
+}
+
+.active.seo-checklist-count--info:after{
+    background: #1188e6;
+    display: block;
+}
+
+.seo-checklist-container {
+    display: block;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.seo-checklist-list-item {
+    font-size: 12px;
+    background-color: #f7f5f5;
+}
+
+.seo-checklist-list-item span {
+    padding: 0 14px;
+    display: inline-block;
+}
+
+.seo-checklist-list-item .note {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.seo-checklist-list-item--failed:before, 
+.seo-checklist-list-item--passed:before, 
+.seo-checklist-list-item--warning:before,
+.seo-checklist-list-item--info:before{
+    font-family: Dashicons;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 2em;
+    padding: 8px;
+    color: #fff;
+}
+
+.seo-checklist-list-item--passed {
+    color: #47b749;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.seo-checklist-list-item--passed:before {
+    background-color: #47b749;
+    content: "\f147";
+}
+
+.seo-checklist-list-item--failed {
+    color: #d40000;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.seo-checklist-list-item--failed:before {
+    padding: 7px;
+    background-color: #d40000;
+    content: "\f335";
+    font-size: 24px;
+}
+
+.seo-checklist-list-item--warning {
+    color: #ffa107;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.seo-checklist-list-item--warning:before {
+    background-color: #ffa107;
+    content: "\f348";
+}
+
+.seo-checklist-list-item--info {
+    color: #1188e6;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.seo-checklist-list-item--info:before {
+    background-color: #1188e6;
+    content: "\f348";
+}
+
+.seo-checklist-list-item .message{
+    color: #292929;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 2;
+    background: #fff;
+    padding: 11px 8px;
+    display: block;
+    border-top: 0;
+    border: 3px solid #f7f5f5;
+    border-top: 0;
+}
+
+.seo-checklist-list-item-empty{
+    background: none;
+    color: #222;
+    text-align: center;
+}
+
+.seo-checklist-list-item-empty:before {
+    content: none;
+}
